@@ -12,7 +12,7 @@ def main():
 def calculate_payroll():
     employee = input('Enter employee name: ')
     hours_worked = int(input('Enter hours worked: '))
-    hourly_rate = int(input('Enter hourly rate: '))
+    hourly_rate = float(input('Enter hourly rate: '))
     overtime = 0
   
     pay = 0
@@ -21,7 +21,7 @@ def calculate_payroll():
     else:
         overtime = hours_worked - 40
         pay = 40 * hourly_rate
-        pay += overtime * hourly_rate * 1.25
+        pay += overtime * hourly_rate * 1.5
 
     print('{}: {} hours, ${:.2f}'.format(employee, hours_worked, pay))
     if overtime:
