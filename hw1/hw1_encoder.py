@@ -1,8 +1,8 @@
 #!/usr/bin/python3
 
 orig_message = input('Please enter your message: ')
-message = orig_message + ' ' * 10
-message = message[:10].upper()
+message = orig_message + ' ' * 9
+message = message[:9].upper()
 
 encoder = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 '
 
