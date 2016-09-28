@@ -11,6 +11,6 @@ for r in range(rows):
     for c in range(random.randint(1, max_columns)):
         # Notice how are using the end named argument.
 	# This will prevent us from moving to a new line after each print
-        print('=')
+        print('=', end='')
     # Now, outside of the inner loop, print an empty string to advance the line
     print('')
